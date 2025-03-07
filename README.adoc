@@ -1,7 +1,7 @@
 XWORLD Licenses
 ===============
 Guenther Brunthaler
-v2025.66
+v2025.66.1
 
 [Please mind the comment at the end of this text about its source 
 format if you need to edit the text.]
@@ -28,7 +28,61 @@ into the top-level directory of your project tree and state
 clearly there which of the licenses in the external project apply 
 to the whole project by default.
 
-[Format of the source form of this text: 66 columns, ASCII 
-character set, continuation lines within the same logical 
-paragraph are indicated by the last character of the previous 
-line being an ASCII space character, right before the newline.]
+
+Repository URN
+-------------
+
+This repository will not be referenced by an URL because URLs are 
+not guaranteed to be stable over time.
+
+Instead, it will be referenced by an URN which will remain the 
+same for all eternity.
+
+The URN of this repository is:
+
+`tag:xworld.mine.nu,2009:someplace-xworld--licenses-inmsl0pf9ddy9n2hmggrtza6x.git`
+
+In order to actually check out the submodule with this URN in 
+Git, a mapping between the URN and the current hosting service 
+must be established.
+
+At the time of this writing (2025), all XWORLD repositories are 
+hosted or at least mirrored on the free GitHub hosting service.
+
+Should GitHub cease its free services one day, all projects will 
+be created to a different hosting service. The URLs of the 
+projects will change, but the URNs in the `.gitmodules` files 
+will always stay the same.
+
+In order to map the URNs to GitHub, execute the following 
+command:
+
+----
+$ git config --global \
+  'url.git@github.com:guenther-brunthaler/.insteadof' \
+  'tag:xworld.mine.nu,2009:'
+----
+
+This will transform the URNs in the "git clone" and in the 
+`.gitmodules` file to GitHub URLs.
+
+If a different hosting service should be chosen in the future, 
+only the `git config` above needs to be run once with a different 
+hoster URL, and all URNs of all projects will automatically refer 
+to the new URLs without any changes necessary in the individual 
+repository clones.
+
+If you are unhappy about the --global option modifying your 
+`~/.gitconfig` file, you can replace the `--global` with 
+`--local` and run the `git config` command from within the 
+checked-out repository. Then the URN redirection will only be set 
+locally for this single repository.
+
+
+Format of the source form of this text
+--------------------------------------
+
+66 columns (where possible), ASCII character set, continuation 
+lines within the same logical paragraph are indicated by the last 
+character of the previous line being an ASCII space character, 
+right before the newline.
