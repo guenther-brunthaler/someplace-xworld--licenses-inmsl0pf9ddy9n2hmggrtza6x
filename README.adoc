@@ -1,7 +1,7 @@
 XWORLD Licenses
 ===============
 Guenther Brunthaler
-v2025.66.1
+v2025.66.2
 
 [Please mind the comment at the end of this text about its source 
 format if you need to edit the text.]
@@ -30,12 +30,12 @@ to the whole project by default.
 
 
 Repository URN
--------------
+--------------
 
 This repository will not be referenced by an URL because URLs are 
 not guaranteed to be stable over time.
 
-Instead, it will be referenced by an URN which will remain the 
+Instead, it will be referenced by a URN which will remain the 
 same for all eternity.
 
 The URN of this repository is:
@@ -50,7 +50,7 @@ At the time of this writing (2025), all XWORLD repositories are
 hosted or at least mirrored on the free GitHub hosting service.
 
 Should GitHub cease its free services one day, all projects will 
-be created to a different hosting service. The URLs of the 
+be relocated to a different hosting service. The URLs of the 
 projects will change, but the URNs in the `.gitmodules` files 
 will always stay the same.
 
