@@ -1,7 +1,7 @@
 XWORLD Licenses
 ===============
 Guenther Brunthaler
-v2025.66.2
+v2025.66.3
 
 [Please mind the comment at the end of this text about its source 
 format if you need to edit the text.]
@@ -32,8 +32,8 @@ to the whole project by default.
 Repository URN
 --------------
 
-This repository will not be referenced by an URL because URLs are 
-not guaranteed to be stable over time.
+This repository will not be referenced as a Git submodule by a 
+URL because URLs are not guaranteed to be stable over time.
 
 Instead, it will be referenced by a URN which will remain the 
 same for all eternity.
@@ -47,7 +47,7 @@ Git, a mapping between the URN and the current hosting service
 must be established.
 
 At the time of this writing (2025), all XWORLD repositories are 
-hosted or at least mirrored on the free GitHub hosting service.
+hosted or at least mirrored on the free 'GitHub' hosting service.
 
 Should GitHub cease its free services one day, all projects will 
 be relocated to a different hosting service. The URLs of the 
@@ -63,16 +63,16 @@ $ git config --global \
   'tag:xworld.mine.nu,2009:'
 ----
 
-This will transform the URNs in the "git clone" and in the 
-`.gitmodules` file to GitHub URLs.
+This will transform the URN prefixes in the "`git clone`" command 
+and in the `.gitmodules` file into GitHub URLs.
 
 If a different hosting service should be chosen in the future, 
-only the `git config` above needs to be run once with a different 
-hoster URL, and all URNs of all projects will automatically refer 
-to the new URLs without any changes necessary in the individual 
-repository clones.
+only the `git config` command above needs to be run once with a 
+different hoster URL, and all URNs of all projects will 
+automatically refer to the new URLs without any configuration 
+changes necessary in the individual repository clones.
 
-If you are unhappy about the --global option modifying your 
+If you are unhappy about the `--global` option modifying your 
 `~/.gitconfig` file, you can replace the `--global` with 
 `--local` and run the `git config` command from within the 
 checked-out repository. Then the URN redirection will only be set 
